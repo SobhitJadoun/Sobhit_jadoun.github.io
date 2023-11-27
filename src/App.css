@@ -1,0 +1,533 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  background:  #090766;
+}
+.nav span{
+  color: #fe3e57;
+}
+
+.nav-menu li a:hover{
+  color: #fe3e57!important;
+  transition: ease all .5s;
+}
+.nav-menu li a{
+  font-size: 20px;
+  font-weight: 500;
+  color: white!important;
+}
+
+.nav{
+  background-color:#0a085e!important;
+}
+.toggle{
+  color: white!important;
+}
+.navbar-brand{
+  color: white!important;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-main{
+padding: 12px;
+text-align: center;
+height: 3rem;
+width: 9rem;
+}
+
+.btn-main {
+  background-color: #fe3e57;
+  color: #FFF;
+  position: relative; 
+
+}
+.btn-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 2px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 2px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-main:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(240, 110, 110, 0);
+}
+.btn-main:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+
+}
+
+/* =================Hero Section========== */
+.hero .left{
+  text-align: center;
+margin-top: 15rem;
+margin-left: 0rem;
+  
+}
+.hero h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  color: white;
+  font-weight: 900;
+}
+.hero p{
+  color: white;
+  font-weight: 800;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.hero h1 span{
+  color: #fe3e57;
+}
+.hero{
+  background: linear-gradient(180deg,#0a085e, #433aee);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.hero img{
+  height: 100vh;
+  float: right;
+  margin-right: 80px;
+  overflow: hidden;
+  transition: scale 300ms;
+  overflow: hidden;
+}
+.hero img:hover{
+  scale: 120%;
+  transition: ease-in 1s;
+ 
+}
+.hero .social-button{
+  text-align: center;
+  justify-content: center;
+  width: 30rem;
+  margin-left: 20px;
+}
+.hero .social-button i{
+  font-size: 45px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.hero .social-button i:hover{
+  transform:skewX(1.3);
+  transition: ease all 1s;
+}
+.hero .social-button .facebook i{
+  color: #ea4c89!important;
+  border: 2px solid #f34c63;
+  width: 4.5rem;
+  height: 11vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.hero .social-button .linkdin i{
+  margin: 0px 40px;
+  color: #5e93f5;
+  border: 2px solid #5e93f5;
+  width: 4.5rem;
+  height: 11vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.hero .social-button .instagram i{
+  color: #d5f157;
+  border: 2px solid #d1ec59;
+  width: 4.5rem;
+  height: 11vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* ========about section ======= */
+.aboutSection{
+  background: #080761;
+  padding-top: 70px;
+}
+.aboutSection h1{
+  font-size: 75px;
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding:65px 55px;
+}
+.aboutmenu{
+  border-bottom: 1px solid #6376e6;
+  border-bottom-style:solid;
+}
+.aboutSection .navbar{
+justify-content: center;
+text-align: center;
+font-size: 25px;
+}
+.aboutmenu .active{
+  color: #fe3e57;
+  
+}
+.aboutmenu .nav-item .link{
+  text-decoration: none;
+}
+.aboutSection .navbar a{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  color: white;
+  margin-left: 7rem;
+}
+.about{
+  background: #07064e;
+ margin-top: -16px;
+}
+.about .left{
+  overflow: hidden;
+}
+.about .left img{
+  width: 100%;
+  height: auto;
+}
+
+.about h1{
+  word-spacing: 2px;
+  color: white;
+  font-size: 55px;
+  font-weight: 900;
+}
+.about p{
+  color: white;
+  font-size: 20px;
+  word-spacing: 4px;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.skill{
+  background: #07064e;
+padding-top: 40px;
+  margin-top: -48px;
+}
+.skill .progress{
+  position: relative;
+  width: 65%;
+  height: 3px;
+  margin-left: 7.5rem;
+}
+.skill .progress .progress-bar{
+text-align: center;
+}
+.skill .row{
+  text-align: center;
+}
+.skill h1{
+  font-size: 6rem;
+  color: #fe3e57;
+}
+.skill .first .progress .progress-bar{
+  background: #fe3e57;
+  width: 75%
+}
+.skill p{
+  color: white;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.skill .second h1{
+  color: rgb(59, 195, 230);
+}
+.skill .second .progress .progress-bar{
+  background: rgb(59, 195, 230);
+  width: 90%
+}
+.skill .third h1{
+  color: rgb(243, 222, 37);
+}
+.skill .third .progress .progress-bar{
+  background: rgb(243, 222, 37);
+  width: 55%
+}
+.skill .fourth h1{
+  color: rgb(233, 23, 170);
+}
+.skill .fourth .progress .progress-bar{
+  background: rgb(233, 23, 170);
+  width: 65%
+}
+.skill .five h1{
+  color: rgb(65, 233, 23);
+}
+.skill .five .progress .progress-bar{
+  background: rgb(65, 233, 23);
+  width: 40%
+}
+.skill .six h1{
+  color: rgb(160, 59, 163);
+}
+.skill .six .progress .progress-bar{
+  background: rgb(160, 59, 163);
+  width: 40%
+}
+.service{
+  width: 100%;
+  padding: 50px 10px;
+  text-align: center;
+  background: #07064e;
+  margin-top: -48px;
+}
+.service img{
+  width: 14vh;
+  position: relative;
+  margin-left: 20px;
+}
+.service .row{
+  justify-content: center;
+}
+.service .first{
+  background-image: url('./img/1.png');
+  width: 200px;
+    height: 184px;
+    text-align: center;
+    line-height: 184px;
+    margin-right: 30px;
+}
+.service .second{
+  background-image: url('./img/2.png');
+  width: 200px;
+    height: 184px;
+    text-align: center;
+    line-height: 184px;
+    margin-right: 30px;
+}
+.service .third{
+  background-image: url('./img/3.png');
+  width: 200px;
+    height: 184px;
+    text-align: center;
+    line-height: 184px;
+    margin-right: 30px;
+}
+.service .four{
+  background-image: url('./img/4.png');
+  width: 200px;
+    height: 184px;
+    text-align: center;
+    line-height: 184px;
+    margin-right: 30px;
+}
+
+.service .content{
+  text-align: left;
+}
+.service h1{
+  width: 100%;
+  font-size:2.5rem;
+  color: white;
+}
+.service p{
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.aboutmenu  li .link:hover{
+  color: rgb(248, 75, 75);
+  border-bottom: 3px solid rgb(255, 255, 255);
+  
+}
+/* =========Social ================ */
+.social h1{
+  color: white;
+  padding-top: 20px;
+ font-size: 2rem;
+}
+.social i{
+  margin: 10px;
+  font-size: 4.5rem;
+  padding: 15px 28px;
+  border-radius: 15px;
+}
+.social .facebook{
+  border: 1px solid rgb(80, 219, 61);
+  color: rgb(80, 219, 61);
+}
+.social .face h1:hover{
+   color: rgb(80, 219, 61);
+}
+.social .insta{
+  padding: 15px 22px;
+  border: 1px solid rgb(241, 35, 80);
+  color: rgb(241, 35, 80);
+}
+.social .ins h1:hover{
+  color: rgb(241, 35, 80);
+}
+.social .twitter{
+  padding: 15px 20px;
+  border: 1px solid rgb(85, 102, 255);
+  color: rgb(29, 168, 248);
+}
+.social .twi h1:hover{
+  color: rgb(29, 168, 248);
+
+}
+.social .linkdin{
+  border: 1px solid rgb(249, 85, 255);
+  color: rgb(248, 29, 230);
+}
+.social .lin h1:hover{
+  color: rgb(248, 29, 230);
+
+}
+.social .whatsapp{
+  border: 1px solid rgb(43, 255, 0);
+  color: rgb(60, 255, 0);
+}
+.social .what h1:hover{
+  color: rgb(60, 255, 0);
+}
+.social .sky{
+  border: 1px solid rgb(255, 251, 0);
+  color: rgb(255, 217, 0);
+}
+.social .skype h1:hover{
+  color: rgb(255, 217, 0);
+
+}
+/* =========animation========== */
+.talk{
+  margin-top: 20vh;
+  background-image: url('./img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+
+.talk h1{
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden; 
+}
+.talk .form{
+  color: white;
+  background: #0905559a;
+}
+.talk .form{
+  text-align: center;
+  border: 1px solid gold;
+  padding: 1rem;
+}
+.talk .form  .name input{
+  color: white;
+  border:none;
+  border-bottom: 1px solid white;
+  margin:0rem 2rem;
+  background: none;
+}
+.talk .form .input-text-2  input{
+  background: none;
+  color: white;
+  border:none;
+  border-bottom: 1px solid white;
+  width: 75%;
+}
+.talk .form h2{
+  font-size: 3rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.talk .right .add{
+  border: 1px solid gold;
+  width: 22rem;
+  padding: 15px;
+  background: #0905559a;
+}
+.talk .right h1{
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.talk .add i{
+  color: white;
+  font-size: 3.5rem;
+  
+}
+.talk .add p{
+  color:  white;
+  font-size: 1.5rem;
+  margin-left: -50px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+/* ==============Award=============== */
+.award  h2,h3 {
+  
+  font-family: 'Times New Roman', Times, serif;
+}
+.award .auto img{
+  height: 55vh;
+  width: 100%;
+}
+
+/* ==================footer ============= */
+.footer{
+  background:#121151;
+  text-align: center;
+  padding: 10px;
+}
+.footer .logo a{
+  font-size: 2.5rem;
+  margin-left: 30px;
+}
+.footer span{
+  color: #fe3e57;
+}
+.footer .left{
+  display: flex;
+  flex: wrap;
+  float: right;
+  position: relative;
+}
+
+.footer .right ul{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex: wrap;
+  float: left;
+  justify-content: space-evenly;
+}
+.footer ul li a{
+
+ margin: 0px 30px;
+ text-decoration: none;
+ color: white;
+ font-size: 1.6rem;
+ font-family:'Times New Roman', Times, serif;
+}
